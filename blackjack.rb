@@ -1,7 +1,7 @@
 # Constants section
 
-$DECK_SIZE = 52
-$PER_SUITE = 13
+$DECK_SIZE = 56
+$PER_SUITE = 14
 $BLACKJACK_VAL = 21
 $DEALER_LIM = 17
 
@@ -16,7 +16,7 @@ $SUIT_NAMES = {11 => "Ace", 12 => "Jack", 13 => "Queen", 14 => "King"}
 def init_deck
   for i in 0..$DECK_SIZE - 1 do
 		
-    #No ones in the deck, mark them as taken already
+    #No Ones in the deck, mark them as taken already
 
     if i % $PER_SUITE == 0
 			$deck[i] = $TAKEN
