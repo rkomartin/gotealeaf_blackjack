@@ -14,11 +14,11 @@ $SUIT_NAMES = {11 => "Ace", 12 => "Jack", 13 => "Queen", 14 => "King"}
 # Helper methods section
 
 def init_deck
-	for i in 0..$DECK_SIZE - 1 do
+  for i in 0..$DECK_SIZE - 1 do
 		
-		#No ones in the deck, mark them as taken already
+    #No ones in the deck, mark them as taken already
 
-		if i % $PER_SUITE == 0
+    if i % $PER_SUITE == 0
 			$deck[i] = $TAKEN
 		else 
 			$deck[i] = $FREE
